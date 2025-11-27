@@ -1,0 +1,170 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background:  rgb(0, 255, 225); ;
+}
+.address-bar{
+    flex-grow: 1;
+    background: linear-gradient(30deg, black 5% , rgb(1, 51, 91) 40%, rgb(247, 4, 162) 90% );
+    padding: 25px;
+    display: flex;
+}
+
+.address-bar input{
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid black;
+    background: white;
+}
+
+.search-btn{
+    padding: 5px;
+    border: 1px solid black;
+    background: white;
+}
+
+
+.menu-bar{
+    background: linear-gradient(30deg, black 5% , rgb(1, 51, 91) 40%, rgb(247, 4, 162) 90% );
+    padding: 5px 10px;
+    border-bottom: 2px solid black;
+}
+
+.top-links{
+    float: right;
+}
+
+.menu-bar a{
+
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgb(34, 147, 199);
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu-bar a:hover{
+    cursor:pointer;
+    color: white;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    color: rgb(94, 255, 0);
+}
+
+
+.content{
+    padding: 20px;
+}
+
+.status-boxes{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+}
+
+.status{
+    border: 3px solid black;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.chart-container{
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    top: 80px;
+}
+
+
+.links.a{
+    font-size: 20px;
+
+}
+
+
+.footer{
+     background: linear-gradient(30deg, rgb(247, 4, 162) 10%, rgb(1, 51, 91) 50%,  black 90%);
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid black;
+}
+
+p{
+    color: white;
+    font-weight: 600;
+    
+}
+
+.record-button{
+    background-color: pink;
+    color: black;
+    border: 4px solid black;
+    padding: 20px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 0.3s ease;
+    width: 300px;
+    margin-top: 60px;
+    font-weight: 700;
+   
+
+}
+
+.record-button:hover{
+     background-color: rgb(1, 51, 91); 
+    color: rgb(247, 4, 162);
+    font-weight: 700;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+.record-button.recording{
+    background-color: red;
+}
+
+.record-button.recording:hover{
+     background-color: rgb(1, 51, 91); 
+    color: rgb(247, 4, 162);
+    font-weight: 700;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
+
+
+#audio-container{
+    width: 50px;
+}
+
+.audio-recording{
+    position:relative;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.delete-button{
+    background-color: pink;
+    color: black;
+    font-weight: 700;
+    border: 2px solid black;
+    padding: 5px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.delete-button:hover{
+    background-color: rgb(1, 51, 91); 
+    color: rgb(247, 4, 162);
+    font-weight: 700;
+    transition: 0.2s ease;
+    transform: scale(1.05);
+}
