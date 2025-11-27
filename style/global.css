@@ -30,7 +30,8 @@
 .main{
     grid-area: main;
     height: 92vh;
-    background-color: #0B0C10;
+    /* background-color: #0B0C10; */
+    background-color: #222222;
 }
 .footer{
     grid-area: footer;
