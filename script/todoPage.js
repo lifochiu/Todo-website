@@ -13,7 +13,7 @@ taskCreateBtn.addEventListener('click', () => {
     if (taskInput.value == "") {
         window.alert("Error, please input text");
     } else {
-        createDiv(taskID,taskInput.value);
+        createDiv(taskInput.value);
         savedTasks.push(taskInput.value);
         localStorage.setItem('toDoList', JSON.stringify(savedTasks));
     }
@@ -26,11 +26,11 @@ taskCreateBtn.addEventListener('click', () => {
 
 console.log(savedTasks);
 
-function createDiv(id, text) {
+function createDiv(text) {
     const date = new Date();
     let taskHTML =
     ` <div class="taskArea" id="task">
-    <p class="taskContentNumber" id="task">#${id}</p>
+    <p class="taskContentNumber" id="task">#</p>
     <p class="taskContent" id="taskContent">${text}</p>
     <p class="currentDate" id="currentDate">${date.toLocaleString()}</p>
     <button class="editBtn" id="editBtn">Edit</button>
