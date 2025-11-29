@@ -2,21 +2,44 @@ const taskInput = document.getElementById('taskInput');
 const taskCreateBtn = document.getElementById('taskCreateBtn');
 const contentArea = document.getElementById('contentArea');
 let taskID = 1;
+let savedTasks = JSON.parse(localStorage.getItem('toDoList')) || [];
+
+savedTasks.forEach(element => {
+    createDiv(element);
+});
 
 taskCreateBtn.addEventListener('click', () => {
 
     if (taskInput.value == "") {
         window.alert("Error, please input text");
     } else {
-        createDiv(taskID, taskInput.value);
+        createDiv(taskID,taskInput.value);
+        savedTasks.push(taskInput.value);
+        localStorage.setItem('toDoList', JSON.stringify(savedTasks));
     }
     taskID++;
-    taskInput.value = "";
+    taskInput.value = ""; //clear input text area
     // console.log("taskInput.value");
     // console.log(taskID);
 
 });
 
+console.log(savedTasks);
+
+function createDiv(id, text) {
+    const date = new Date();
+    let taskHTML =
+    ` <div class="taskArea" id="task">
+    <p class="taskContentNumber" id="task">#${id}</p>
+    <p class="taskContent" id="taskContent">${text}</p>
+    <p class="currentDate" id="currentDate">${date.toLocaleString()}</p>
+    <button class="editBtn" id="editBtn">Edit</button>
+    <button class="closeBtn" id="closeBtn">Close</button>
+  </div>`;
+    contentArea.insertAdjacentHTML('beforeend', taskHTML);
+}
+
+//edit button and close button for each task
 contentArea.addEventListener('click', function (event) {
     if (event.target.classList.contains('editBtn')) {
         // console.log(event.target.id);
@@ -43,16 +66,3 @@ contentArea.addEventListener('click', function (event) {
 
     }
 })
-
-function createDiv(number, text) {
-    const date = new Date();
-    let taskHTML =
-    ` <div class="taskArea" id="task">
-    <p class="taskContentNumber" id="task${number}">#${number}</p>
-    <p class="taskContent" id="taskContent${number}">${text}</p>
-    <p class="currentDate" id="currentDate">${date.toLocaleString()}</p>
-    <button class="editBtn" id="editBtn${number}">Edit</button>
-    <button class="closeBtn" id="closeBtn${number}">Close</button>
-  </div>`;
-    contentArea.insertAdjacentHTML('beforeend', taskHTML);
-}
