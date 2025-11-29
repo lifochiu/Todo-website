@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/analysis.css" />
+    <title>Analysis page</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+
+
+  <body>
+
+    <div class="address-bar">
+      <input type="text" value="https://">
+      <button class="search-btn"></button>
+    </div>
+
+
+    <nav class="menu-bar">
+      <a href="#">File</a>
+      <a href="#">Edit</a>
+      <a href="#">View</a>
+      <a href="#">Help</a>
+      <div class="top-links">
+          <a href="todoPage.html">Todo Page</a>
+          <a href="calendarPage.html">Calendar Page</a>
+          <a href="analysisPage.html">Analysis Page</a>
+        </div>
+    </nav>
+
+    <main class="content">
+
+      <div class="status-boxes">
+        <div class="status">Delayed: <strong> 2 items </strong></div>
+        <div class="status">In Progress: <strong>2 items</strong></div>
+        <div class="status">Complete: <strong>2 items</strong></div>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="taskChart"></canvas>
+      </div>
+
+      <div style="text-align:center; margin-top: 40px;">
+            <button id="recordBtn" class="record-button">Start Recording</button>
+      </div>
+      <div id="audioContainer"
+      ></div>
+    </main>
+
+      <div class="footer">
+        <p>
+        copyright&nbsp;&copy;&nbsp; 2025
+        </p>
+      </div>
+
+
+    <script src="./script/analysis.js"></script>
+  </body>
+</html>

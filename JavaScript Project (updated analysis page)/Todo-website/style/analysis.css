@@ -1,0 +1,104 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background:  rgb(0, 255, 225); ;
+}
+.address-bar{
+    flex-grow: 1;
+    background: linear-gradient(30deg, black 5% , rgb(1, 51, 91) 40%, rgb(247, 4, 162) 90% );
+    padding: 15px;
+    display: flex;
+}
+
+.address-bar input{
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid black;
+    background: white;
+}
+
+.search-btn{
+    padding: 5px;
+    border: 1px solid black;
+    background: white;
+}
+
+
+.menu-bar{
+    background: linear-gradient(30deg, black 5% , rgb(1, 51, 91) 40%, rgb(247, 4, 162) 90% );
+    padding: 5px 10px;
+    border-bottom: 2px solid black;
+}
+
+.top-links{
+    float: right;
+}
+
+.menu-bar a{
+
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgb(34, 147, 199);
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu-bar a:hover{
+    cursor:pointer;
+    color: white;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    color: rgb(94, 255, 0);
+}
+
+
+.content{
+    padding: 20px;
+}
+
+.status-boxes{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.status{
+    border: 2px solid black;
+    padding: 10px;
+    background: white;
+    font-size: 18px;
+}
+
+.chart-container{
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    top: 80px;
+}
+
+
+.links.a{
+    font-size: 20px;
+
+}
+
+
+.footer{
+    position: relative;
+    top: 230px;
+     background: linear-gradient(30deg, black 5% , rgb(1, 51, 91) 40%, rgb(247, 4, 162) 90% );
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid black;
+}
+
+p{
+    color: white;
+    font-weight: 600;
+    
+}
+
