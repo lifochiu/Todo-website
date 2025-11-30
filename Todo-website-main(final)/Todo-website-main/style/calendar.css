@@ -1,0 +1,205 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+.header{
+    grid-area: header;
+    height: 70px;
+    background-color: #1F2833;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a{
+    font-size: 26px;
+    padding: 40px 40px 25px 40px;
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header a:hover{
+    background-color: orange;
+    border-radius: 10px;
+    color:white
+}
+
+.main{
+    height: 125vh;
+    background-color: #0B0C10;
+}
+
+.day .weekday {
+    max-height: 20px;
+    background-color: #323b45;
+    color: #c0efff;
+}
+
+
+.day {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    align-content: center;    
+}
+
+.day div {
+    background-color: white;
+    width: 120px;
+    height: 90px;
+    border: 1px solid #2a2930;
+    font-weight: bold;
+}
+
+.footer{
+    margin-top: 100px;
+    grid-area: footer;
+    background-color: #1F2833;
+    height: 70px;
+    font-size: 26px;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.month {
+    text-align: center;
+    padding: 20px 15px;
+    width: auto;
+    background-color: #323b45;
+    list-style-type: none;
+}
+
+.month ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.month ul li {
+    color: #c0efff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.month .next {
+    position: relative;
+    float: right;
+}
+
+.month .next:hover {
+    color: #f8fdff;
+}
+
+.month .back {
+    position: relative;
+    float: left;
+}
+
+.month .back:hover {
+    color: #f8fdff;
+}
+
+/*---EVERYTHING BEYOND THIS TEXT IS APART OF MY TESTING---*/
+body {
+    background-color: #222222;
+}
+
+.calander {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    max-height: 800px;
+}
+
+.calanderCont {
+    background-color: #e3f0ff ;
+    border: 3px solid #34303e;
+    max-width: 600px;
+    width: 600px;
+    border: 5px solid #213348;
+    box-shadow: 9px 9px 10px#0B0C10;
+}
+
+.todaysDate {
+    display: flex;
+    background-color: #86adda;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dayMonth ul, .dayMonth li {
+    list-style: none;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.weekdays {
+    position: relative;
+    display: grid;
+    bottom: 18px;
+    grid-template-columns: repeat(7,1fr);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(#e3f0ff, #ffffff, #cfdeef);
+}
+
+.weekdays li {
+    margin-right: 5px;
+}
+
+.days li:hover {
+    background-color: #e3f0ff;
+}
+
+.days li {
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+    max-height: 50px;
+}
+
+.calHead {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#e3f0ff, #b7eeff, #cfdeef);
+}
+
+#currentD{
+    margin-left: 5px;
+}
+
+#dateYear, #dateMonth {
+ font-size: xx-large;
+}
+
+#weather-data {
+    display: block;
+    position: absolute;
+    justify-self:center;
+    margin-right: 425px;
+}
+
+#weather-data p {
+    text-shadow: 2px 2px 15px #feffa9;
+}

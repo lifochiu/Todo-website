@@ -1,0 +1,109 @@
+.taskCreateArea, .useImageArea{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 50px 0px 0px 20px;
+}
+#taskInput {
+    font-family: inherit;
+    width: 70%;
+    border: 0;
+    border-radius: 10px;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.5s;
+    background-color: bisque;
+}
+#taskInput:focus{
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+}
+#taskCreateBtn, #taskImgCreateBtn{
+    height: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+#taskCreateBtn:hover, #taskImgCreateBtn:hover{
+    cursor:pointer;
+}
+.taskArea {
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin: 25px 30px 25px 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.taskContentNumber {
+    font-size: 30px;
+    color: white;
+    margin-left: 15px;
+    margin-right: auto;
+}
+.taskContent{
+    font-size: 30px;
+    color: white;
+    margin-left: 15px;
+    margin-right: auto;
+}
+.currentDate{
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+}
+.editBtn{
+    font-size: 20px;
+    width:100px;
+    padding: 20px 0px 20px 0px;
+    border-radius: 10px;
+}
+.closeBtn {
+    font-size: 20px;
+    width: 100px;
+    padding: 20px 0px 20px 0px;
+    border-radius: 10px;
+}
+
+/*Add Image CSS*/
+.imgContainer {
+    position: absolute;
+    display: none;
+    left: 300px;
+    background-color: aliceblue;
+}
+
+.imageSelectArea {
+    max-width: 10px;
+    width: 100px;
+}
+
+.imgContainer img {
+    max-width: 425px;
+    max-height: 300px;
+}
+
+.imgContainer button {
+    background-color: none;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.CloseImgBtn {
+    display: none;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    
+} 
+
+#task img {
+    max-width: 425px;
+    max-height: 300px;
+    box-shadow: 4px 4px 20px black;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/todoPage.css">
+    <script src="./script/todoPage.js" defer></script>
+    <title>Todo page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <a href="todoPage.html">Todo Page</a>
+        </div>
+        <div>
+          <a href="calendarPage.html">Calendar Page</a>
+        </div>
+        <div>
+          <a href="analysisPage.html">Analysis Page</a>
+        </div>
+      </div>
+      <div class="main" id="main">
+        <div class="taskCreateArea" id="taskCreate">
+          <input id="taskInput" type="text" placeholder="Input todo item">
+          <button class="taskCreateBtn" id="taskCreateBtn">Create task</button>
+          <button class="taskImgCreateBtn" id="taskImgCreateBtn" onclick="showImgs()">Use Image</button>
+        </div>
+        <div class="imageSelectArea" id="imgArea">
+          
+          <div class="imgContainer" id="imgCntr">
+            <button class="CloseImgBtn" id="CloseImgBtn" onclick="hideImgs()">Close</button>
+            <button id="img1" onclick="hideImgs()"><img src="./images/img1.png" alt="img1"></button>
+            <button id="img2" onclick="hideImgs()"><img src="./images/img2.png" alt="img2"></button>
+          </div>
+        </div>
+        <div class="contentArea" id="contentArea">
+          <!-- <div class="taskArea" id="task">
+            <p class="taskContent" id="taskNumber">#1</p>
+            <p class="taskContent" id="taskContent">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quidem laudantium, consequuntur inventore nesciunt mollitia accusantium placeat minus quisquam, explicabo repellat. Quas veniam consequatur quam minima dolorem rem mollitia possimus!</p>
+            <button class="taskBtn" id="editBtn">Edit</button>
+            <button class="taskBtn" id="closeBtn">Close</button>
+          </div> -->
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+        Copyright&nbsp;&copy;&nbsp; 2025
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--<img src="./images/img2.png" alt="uploaded_img1">-->
