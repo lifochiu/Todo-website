@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./style/global.css" />
     <link rel="stylesheet" href="./style/analysis.css" />
     <title>Analysis page</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+      -->
+    <script src="./script/chart.js" defer></script>
     <script src="./script/analysis.js" defer></script>
   </head>
 
@@ -27,13 +29,19 @@
       <div class="main">
         <main class="content">
           <div class="status-boxes">
-            <div class="status">Delayed: <strong> 2 items </strong></div>
-            <div class="status">In Progress: <strong>2 items</strong></div>
-            <div class="status">Complete: <strong>2 items</strong></div>
+            <div class="status" id="delayItem">Delayed: <strong>  items </strong></div>
+            <div class="status" id="inProgressItem">In Progress: </div>
+            <div class="status" id="closedItem">Complete: </div>
           </div>
           <div class="chart-container">
             <canvas id="taskChart"></canvas>
           </div>
+          <div style="text-align: center; margin-top: 40px">
+            <button id="recordBtn" class="record-button">
+              Start Recording
+            </button>
+          </div>
+          <div id="audioContainer"></div>
         </main>
       </div>
       <div class="footer">
